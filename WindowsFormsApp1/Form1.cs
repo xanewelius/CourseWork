@@ -7,18 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        public static string connect = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=aPO.mdb";
+        private OleDbConnection myconnect;
+        
         public Form1()
         {
             InitializeComponent();
+
+            myconnect = new OleDbConnection(connect);
+            myconnect.Open();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Сотрудники". При необходимости она может быть перемещена или удалена.
             this.сотрудникиTableAdapter.Fill(this.aPODataSet.Сотрудники);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Клиенты". При необходимости она может быть перемещена или удалена.
@@ -151,6 +159,30 @@ namespace WindowsFormsApp1
                     dataGridView3.DataSource = сотрудникиBindingSource;
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //int a = Convert.ToInt32(comboBox2.SelectedIndex);
+            Form2 F2 = new Form2(); F2.Owner = this;
+            F2.ShowDialog();
+            myconnect.Close();
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
+        private void button5_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

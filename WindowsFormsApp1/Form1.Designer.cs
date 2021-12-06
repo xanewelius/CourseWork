@@ -93,18 +93,19 @@ namespace WindowsFormsApp1
             this.заказыBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.клиентыBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.заказыBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.клиентыЗаказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.клиентыBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.клиентыBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.клиентыBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.заказыBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.клиентыЗаказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -124,7 +125,6 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыЗаказыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource4)).BeginInit();
@@ -132,6 +132,7 @@ namespace WindowsFormsApp1
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыЗаказыBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -248,26 +249,28 @@ namespace WindowsFormsApp1
             // настройкаПечатиToolStripMenuItem
             // 
             this.настройкаПечатиToolStripMenuItem.Name = "настройкаПечатиToolStripMenuItem";
-            this.настройкаПечатиToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.настройкаПечатиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.настройкаПечатиToolStripMenuItem.Text = "Настройка печати";
             // 
             // печатьToolStripMenuItem
             // 
             this.печатьToolStripMenuItem.Name = "печатьToolStripMenuItem";
-            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.печатьToolStripMenuItem.Text = "Печать";
             // 
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сохранитьToolStripMenuItem.Text = "Сохранить";
+            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // редактированиеToolStripMenuItem
             // 
@@ -600,11 +603,6 @@ namespace WindowsFormsApp1
             this.заказыBindingSource5.DataMember = "Заказы";
             this.заказыBindingSource5.DataSource = this.bindingSource1;
             // 
-            // клиентыЗаказыBindingSource
-            // 
-            this.клиентыЗаказыBindingSource.DataMember = "КлиентыЗаказы";
-            this.клиентыЗаказыBindingSource.DataSource = this.клиентыBindingSource;
-            // 
             // клиентыBindingSource2
             // 
             this.клиентыBindingSource2.DataMember = "Клиенты";
@@ -636,6 +634,24 @@ namespace WindowsFormsApp1
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Добавление";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(7, 47);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(7, 20);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(158, 21);
+            this.comboBox3.TabIndex = 0;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.button3);
@@ -645,6 +661,15 @@ namespace WindowsFormsApp1
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Редактирование";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(7, 19);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -656,23 +681,6 @@ namespace WindowsFormsApp1
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Удаление";
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(7, 20);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(158, 21);
-            this.comboBox3.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(7, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(6, 20);
@@ -682,20 +690,27 @@ namespace WindowsFormsApp1
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // клиентыЗаказыBindingSource
             // 
-            this.button3.Location = new System.Drawing.Point(7, 19);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.клиентыЗаказыBindingSource.DataMember = "КлиентыЗаказы";
+            this.клиентыЗаказыBindingSource.DataSource = this.клиентыBindingSource;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1230, 292);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1532, 678);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -707,6 +722,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(1548, 717);
+            this.MinimumSize = new System.Drawing.Size(1548, 717);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ателье пошива одежды";
@@ -733,7 +750,6 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыЗаказыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource4)).EndInit();
@@ -741,6 +757,7 @@ namespace WindowsFormsApp1
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыЗаказыBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -822,6 +839,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
     }
 }
 
