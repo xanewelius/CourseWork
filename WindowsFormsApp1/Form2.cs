@@ -13,8 +13,10 @@ namespace WindowsFormsApp1
 {
     public partial class Form2 : Form
     {
+        
         public static string connect = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=aPO.mdb";
         private OleDbConnection myconnect;
+        Form1 frm1 = new Form1();
 
         public Form2()
         {
@@ -29,6 +31,14 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Сотрудники". При необходимости она может быть перемещена или удалена.
+            frm1.сотрудникиTableAdapter.Update(frm1.aPODataSet.Сотрудники);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Клиенты". При необходимости она может быть перемещена или удалена.
+            frm1.клиентыTableAdapter.Update(frm1.aPODataSet.Клиенты);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Заказы". При необходимости она может быть перемещена или удалена.
+            frm1.заказыTableAdapter.Update(frm1.aPODataSet.Заказы);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Сотрудники". При необходимости она может быть перемещена или удалена.
             Close();
         }
 
@@ -42,9 +52,7 @@ namespace WindowsFormsApp1
 
             try
             {
-                dateTimePicker1.Format = DateTimePickerFormat.Custom;
-                dateTimePicker1.CustomFormat = "dd MM yyyy";
-                command.CommandText = "INSERT INTO Заказы (НазваниеЗаказа, ДатаЗаказа, КодКлиента, КодСотрудника, ДатаПримерки, ДатаВыдачи, Стоимость) VALUES ('" + textBox1.Text +"','" + dateTimePicker1.Format +"','"+ textBox3.Text +"','"+ textBox4.Text +"','"+ dateTimePicker2.Format + "','"+ dateTimePicker3.Format + "','"+ textBox7.Text +"')";
+                command.CommandText = "INSERT INTO Заказы (НазваниеЗаказа, ДатаЗаказа, КодКлиента, КодСотрудника, ДатаПримерки, ДатаВыдачи, Стоимость) VALUES ('" + textBox1.Text +"','" + maskedTextBox1.Text +"','"+ textBox3.Text +"','"+ textBox4.Text +"','"+ maskedTextBox2.Text + "','"+ maskedTextBox3.Text + "','"+ textBox7.Text +"')";
                 command.ExecuteNonQuery();
                 myconnect.Close();
             }

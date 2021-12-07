@@ -44,9 +44,9 @@ namespace WindowsFormsApp1
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.aPODataSet1 = new WindowsFormsApp1.aPODataSet();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSet1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,14 +60,14 @@ namespace WindowsFormsApp1
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(277, 41);
+            this.textBox3.Location = new System.Drawing.Point(234, 41);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(97, 20);
             this.textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(380, 41);
+            this.textBox4.Location = new System.Drawing.Point(337, 41);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(97, 20);
             this.textBox4.TabIndex = 3;
@@ -100,7 +100,7 @@ namespace WindowsFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(274, 25);
+            this.label3.Location = new System.Drawing.Point(231, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 9;
@@ -109,7 +109,7 @@ namespace WindowsFormsApp1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(377, 25);
+            this.label4.Location = new System.Drawing.Point(331, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 13);
             this.label4.TabIndex = 10;
@@ -118,7 +118,7 @@ namespace WindowsFormsApp1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(480, 25);
+            this.label5.Location = new System.Drawing.Point(450, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 13);
             this.label5.TabIndex = 11;
@@ -127,7 +127,7 @@ namespace WindowsFormsApp1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(583, 25);
+            this.label6.Location = new System.Drawing.Point(556, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 12;
@@ -167,35 +167,41 @@ namespace WindowsFormsApp1
             this.aPODataSet1.DataSetName = "aPODataSet";
             this.aPODataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dateTimePicker1
+            // maskedTextBox1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(131, 41);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(140, 20);
-            this.dateTimePicker1.TabIndex = 16;
+            this.maskedTextBox1.Location = new System.Drawing.Point(128, 41);
+            this.maskedTextBox1.Mask = "00/00/0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.TabIndex = 19;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
-            // dateTimePicker2
+            // maskedTextBox2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(454, 87);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(140, 20);
-            this.dateTimePicker2.TabIndex = 17;
+            this.maskedTextBox2.Location = new System.Drawing.Point(437, 40);
+            this.maskedTextBox2.Mask = "00/00/0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox2.TabIndex = 20;
+            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
             // 
-            // dateTimePicker3
+            // maskedTextBox3
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(561, 61);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(140, 20);
-            this.dateTimePicker3.TabIndex = 18;
+            this.maskedTextBox3.Location = new System.Drawing.Point(559, 41);
+            this.maskedTextBox3.Mask = "00/00/0000";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox3.TabIndex = 21;
+            this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 123);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
@@ -238,8 +244,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private aPODataSet aPODataSet1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
     }
 }

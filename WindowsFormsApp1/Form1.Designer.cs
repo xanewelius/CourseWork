@@ -42,6 +42,8 @@ namespace WindowsFormsApp1
             this.датаПримеркиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаВыдачиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.стоимостьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.клиентыЗаказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.клиентыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.заказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.заказыTableAdapter = new WindowsFormsApp1.aPODataSetTableAdapters.ЗаказыTableAdapter();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -63,7 +65,6 @@ namespace WindowsFormsApp1
             this.имяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.отчествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.телефонDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.клиентыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.клиентыTableAdapter = new WindowsFormsApp1.aPODataSetTableAdapters.КлиентыTableAdapter();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.кодСотрудникаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +74,7 @@ namespace WindowsFormsApp1
             this.специализацияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.телефонDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаРожденияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.сотрудникиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.сотрудникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.сотрудникиTableAdapter = new WindowsFormsApp1.aPODataSetTableAdapters.СотрудникиTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -85,54 +87,39 @@ namespace WindowsFormsApp1
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.заказыBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.заказыBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.сотрудникиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.aPODataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.заказыBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.заказыBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.клиентыBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.заказыBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.клиентыBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.клиентыBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.клиентыBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.заказыBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.клиентыЗаказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button5 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.удалитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.редактироватьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыЗаказыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource6)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыЗаказыBindingSource)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -158,7 +145,8 @@ namespace WindowsFormsApp1
             this.датаПримеркиDataGridViewTextBoxColumn,
             this.датаВыдачиDataGridViewTextBoxColumn,
             this.стоимостьDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.заказыBindingSource;
+            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
+            this.dataGridView1.DataSource = this.клиентыЗаказыBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 32);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(843, 229);
@@ -212,6 +200,16 @@ namespace WindowsFormsApp1
             this.стоимостьDataGridViewTextBoxColumn.DataPropertyName = "Стоимость";
             this.стоимостьDataGridViewTextBoxColumn.HeaderText = "Стоимость";
             this.стоимостьDataGridViewTextBoxColumn.Name = "стоимостьDataGridViewTextBoxColumn";
+            // 
+            // клиентыЗаказыBindingSource
+            // 
+            this.клиентыЗаказыBindingSource.DataMember = "КлиентыЗаказы";
+            this.клиентыЗаказыBindingSource.DataSource = this.клиентыBindingSource;
+            // 
+            // клиентыBindingSource
+            // 
+            this.клиентыBindingSource.DataMember = "Клиенты";
+            this.клиентыBindingSource.DataSource = this.bindingSource1;
             // 
             // заказыBindingSource
             // 
@@ -314,6 +312,7 @@ namespace WindowsFormsApp1
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
             this.помощьToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.помощьToolStripMenuItem.Text = "Помощь";
+            this.помощьToolStripMenuItem.Click += new System.EventHandler(this.помощьToolStripMenuItem_Click);
             // 
             // оПрограммеToolStripMenuItem
             // 
@@ -331,6 +330,7 @@ namespace WindowsFormsApp1
             this.имяDataGridViewTextBoxColumn,
             this.отчествоDataGridViewTextBoxColumn,
             this.телефонDataGridViewTextBoxColumn});
+            this.dataGridView2.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView2.DataSource = this.клиентыBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(12, 267);
             this.dataGridView2.Name = "dataGridView2";
@@ -368,11 +368,6 @@ namespace WindowsFormsApp1
             this.телефонDataGridViewTextBoxColumn.HeaderText = "Телефон";
             this.телефонDataGridViewTextBoxColumn.Name = "телефонDataGridViewTextBoxColumn";
             // 
-            // клиентыBindingSource
-            // 
-            this.клиентыBindingSource.DataMember = "Клиенты";
-            this.клиентыBindingSource.DataSource = this.bindingSource1;
-            // 
             // клиентыTableAdapter
             // 
             this.клиентыTableAdapter.ClearBeforeFill = true;
@@ -389,7 +384,8 @@ namespace WindowsFormsApp1
             this.специализацияDataGridViewTextBoxColumn,
             this.телефонDataGridViewTextBoxColumn1,
             this.датаРожденияDataGridViewTextBoxColumn});
-            this.dataGridView3.DataSource = this.сотрудникиBindingSource;
+            this.dataGridView3.ContextMenuStrip = this.contextMenuStrip1;
+            this.dataGridView3.DataSource = this.сотрудникиBindingSource1;
             this.dataGridView3.Location = new System.Drawing.Point(12, 464);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(843, 202);
@@ -438,6 +434,11 @@ namespace WindowsFormsApp1
             this.датаРожденияDataGridViewTextBoxColumn.HeaderText = "ДатаРождения";
             this.датаРожденияDataGridViewTextBoxColumn.Name = "датаРожденияDataGridViewTextBoxColumn";
             // 
+            // сотрудникиBindingSource1
+            // 
+            this.сотрудникиBindingSource1.DataMember = "Сотрудники";
+            this.сотрудникиBindingSource1.DataSource = this.bindingSource1;
+            // 
             // сотрудникиBindingSource
             // 
             this.сотрудникиBindingSource.DataMember = "Сотрудники";
@@ -464,9 +465,6 @@ namespace WindowsFormsApp1
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "По убыванию",
-            "По возрастанию"});
             this.comboBox1.Location = new System.Drawing.Point(7, 20);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(202, 21);
@@ -531,14 +529,11 @@ namespace WindowsFormsApp1
             this.groupBox2.Size = new System.Drawing.Size(422, 54);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Фильтры";
+            this.groupBox2.Text = "Фильтр";
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Клиенты",
-            "Сотрудники"});
             this.comboBox2.Location = new System.Drawing.Point(8, 19);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(130, 21);
@@ -563,65 +558,10 @@ namespace WindowsFormsApp1
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // заказыBindingSource1
-            // 
-            this.заказыBindingSource1.DataMember = "Заказы";
-            this.заказыBindingSource1.DataSource = this.bindingSource1;
-            // 
-            // заказыBindingSource2
-            // 
-            this.заказыBindingSource2.DataMember = "Заказы";
-            this.заказыBindingSource2.DataSource = this.bindingSource1;
-            // 
-            // сотрудникиBindingSource1
-            // 
-            this.сотрудникиBindingSource1.DataMember = "Сотрудники";
-            this.сотрудникиBindingSource1.DataSource = this.bindingSource1;
-            // 
             // aPODataSetBindingSource
             // 
             this.aPODataSetBindingSource.DataSource = this.aPODataSet;
             this.aPODataSetBindingSource.Position = 0;
-            // 
-            // заказыBindingSource3
-            // 
-            this.заказыBindingSource3.DataMember = "Заказы";
-            this.заказыBindingSource3.DataSource = this.aPODataSetBindingSource;
-            // 
-            // заказыBindingSource4
-            // 
-            this.заказыBindingSource4.DataMember = "Заказы";
-            this.заказыBindingSource4.DataSource = this.aPODataSet;
-            // 
-            // клиентыBindingSource1
-            // 
-            this.клиентыBindingSource1.DataMember = "Клиенты";
-            this.клиентыBindingSource1.DataSource = this.aPODataSet;
-            // 
-            // заказыBindingSource5
-            // 
-            this.заказыBindingSource5.DataMember = "Заказы";
-            this.заказыBindingSource5.DataSource = this.bindingSource1;
-            // 
-            // клиентыBindingSource2
-            // 
-            this.клиентыBindingSource2.DataMember = "Клиенты";
-            this.клиентыBindingSource2.DataSource = this.aPODataSet;
-            // 
-            // клиентыBindingSource3
-            // 
-            this.клиентыBindingSource3.DataMember = "Клиенты";
-            this.клиентыBindingSource3.DataSource = this.bindingSource1;
-            // 
-            // клиентыBindingSource4
-            // 
-            this.клиентыBindingSource4.DataMember = "Клиенты";
-            this.клиентыBindingSource4.DataSource = this.bindingSource1;
-            // 
-            // заказыBindingSource6
-            // 
-            this.заказыBindingSource6.DataMember = "Заказы";
-            this.заказыBindingSource6.DataSource = this.aPODataSet;
             // 
             // groupBox3
             // 
@@ -629,18 +569,18 @@ namespace WindowsFormsApp1
             this.groupBox3.Controls.Add(this.comboBox3);
             this.groupBox3.Location = new System.Drawing.Point(876, 135);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(295, 97);
+            this.groupBox3.Size = new System.Drawing.Size(295, 56);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Добавление";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(7, 47);
+            this.button1.Location = new System.Drawing.Point(201, 20);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -654,63 +594,106 @@ namespace WindowsFormsApp1
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.button5);
             this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Location = new System.Drawing.Point(876, 238);
+            this.groupBox4.Location = new System.Drawing.Point(876, 197);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(295, 97);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Редактирование";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(201, 58);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Обновить";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(7, 19);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(119, 23);
             this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
+            this.button3.Text = "Редактировать";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.comboBox4);
+            this.groupBox5.Controls.Add(this.textBox2);
             this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.Location = new System.Drawing.Point(1225, 135);
+            this.groupBox5.Location = new System.Drawing.Point(1177, 92);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(295, 97);
+            this.groupBox5.Size = new System.Drawing.Size(337, 97);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Удаление";
             // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(6, 19);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(158, 21);
+            this.comboBox4.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.AccessibleDescription = "";
+            this.textBox2.Location = new System.Drawing.Point(185, 19);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(6, 20);
+            this.button2.Location = new System.Drawing.Point(256, 61);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
+            this.button2.Text = "Удалить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // клиентыЗаказыBindingSource
+            // contextMenuStrip1
             // 
-            this.клиентыЗаказыBindingSource.DataMember = "КлиентыЗаказы";
-            this.клиентыЗаказыBindingSource.DataSource = this.клиентыBindingSource;
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавитьToolStripMenuItem1,
+            this.удалитьToolStripMenuItem1,
+            this.редактироватьToolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(155, 70);
             // 
-            // button5
+            // удалитьToolStripMenuItem1
             // 
-            this.button5.Location = new System.Drawing.Point(1230, 292);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.удалитьToolStripMenuItem1.Name = "удалитьToolStripMenuItem1";
+            this.удалитьToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.удалитьToolStripMenuItem1.Text = "Удалить";
+            // 
+            // редактироватьToolStripMenuItem1
+            // 
+            this.редактироватьToolStripMenuItem1.Name = "редактироватьToolStripMenuItem1";
+            this.редактироватьToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.редактироватьToolStripMenuItem1.Text = "Редактировать";
+            // 
+            // добавитьToolStripMenuItem1
+            // 
+            this.добавитьToolStripMenuItem1.Name = "добавитьToolStripMenuItem1";
+            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.добавитьToolStripMenuItem1.Text = "Добавить";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1532, 678);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -731,33 +714,25 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыЗаказыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource6)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.клиентыЗаказыBindingSource)).EndInit();
+            this.groupBox5.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -766,17 +741,13 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.BindingSource bindingSource1;
-        private aPODataSet aPODataSet;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource заказыBindingSource;
-        private aPODataSetTableAdapters.ЗаказыTableAdapter заказыTableAdapter;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource клиентыBindingSource;
-        private aPODataSetTableAdapters.КлиентыTableAdapter клиентыTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.BindingSource сотрудникиBindingSource;
-        private aPODataSetTableAdapters.СотрудникиTableAdapter сотрудникиTableAdapter;
         private System.Windows.Forms.ToolStripMenuItem aФайлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem редактированиеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
@@ -807,31 +778,12 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataGridViewTextBoxColumn датаПримеркиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаВыдачиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn стоимостьDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource заказыBindingSource1;
-        private System.Windows.Forms.BindingSource заказыBindingSource2;
-        private System.Windows.Forms.BindingSource сотрудникиBindingSource1;
         private System.Windows.Forms.BindingSource aPODataSetBindingSource;
-        private System.Windows.Forms.BindingSource заказыBindingSource3;
-        private System.Windows.Forms.BindingSource заказыBindingSource4;
-        private System.Windows.Forms.BindingSource заказыBindingSource5;
-        private System.Windows.Forms.BindingSource клиентыBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодКлиентаDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn фамилияDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn имяDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn отчествоDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn телефонDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодСотрудникаDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn фамилияDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn имяDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn отчествоDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn специализацияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn телефонDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn датаРожденияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource клиентыЗаказыBindingSource;
-        private System.Windows.Forms.BindingSource клиентыBindingSource2;
-        private System.Windows.Forms.BindingSource клиентыBindingSource3;
-        private System.Windows.Forms.BindingSource клиентыBindingSource4;
-        private System.Windows.Forms.BindingSource заказыBindingSource6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -840,6 +792,25 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.BindingSource клиентыЗаказыBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn кодСотрудникаDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn фамилияDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn имяDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn отчествоDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn специализацияDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn телефонDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn датаРожденияDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource сотрудникиBindingSource1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem удалитьToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem добавитьToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem редактироватьToolStripMenuItem1;
+        public aPODataSetTableAdapters.ЗаказыTableAdapter заказыTableAdapter;
+        public aPODataSetTableAdapters.КлиентыTableAdapter клиентыTableAdapter;
+        public aPODataSetTableAdapters.СотрудникиTableAdapter сотрудникиTableAdapter;
+        public aPODataSet aPODataSet;
     }
 }
 
