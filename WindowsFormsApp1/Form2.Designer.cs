@@ -220,7 +220,7 @@ namespace WindowsFormsApp1
             this.MinimumSize = new System.Drawing.Size(926, 162);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Добавление";
+            this.Text = "Добавление в Заказы";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSet1)).EndInit();
             this.ResumeLayout(false);

@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
         {
             
             InitializeComponent();
+           
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -39,6 +40,11 @@ namespace WindowsFormsApp1
             // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Заказы". При необходимости она может быть перемещена или удалена.
             frm1.заказыTableAdapter.Update(frm1.aPODataSet.Заказы);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Сотрудники". При необходимости она может быть перемещена или удалена.
+            frm1.сотрудникиTableAdapter.Fill(frm1.aPODataSet.Сотрудники);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Клиенты". При необходимости она может быть перемещена или удалена.
+            frm1.клиентыTableAdapter.Fill(frm1.aPODataSet.Клиенты);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "aPODataSet.Заказы". При необходимости она может быть перемещена или удалена.
+            frm1.заказыTableAdapter.Fill(frm1.aPODataSet.Заказы);
             Close();
         }
 
@@ -55,11 +61,13 @@ namespace WindowsFormsApp1
                 command.CommandText = "INSERT INTO Заказы (НазваниеЗаказа, ДатаЗаказа, КодКлиента, КодСотрудника, ДатаПримерки, ДатаВыдачи, Стоимость) VALUES ('" + textBox1.Text +"','" + maskedTextBox1.Text +"','"+ textBox3.Text +"','"+ textBox4.Text +"','"+ maskedTextBox2.Text + "','"+ maskedTextBox3.Text + "','"+ textBox7.Text +"')";
                 command.ExecuteNonQuery();
                 myconnect.Close();
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
