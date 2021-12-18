@@ -11,12 +11,12 @@ using System.Data.OleDb;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form3 : Form
+    public partial class insertsecondtable : Form
     {
         public static string connect = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=aPO.mdb";
         private OleDbConnection myconnect;
-        Form1 frm1 = new Form1();
-        public Form3()
+        main frm1 = new main();
+        public insertsecondtable()
         {
             InitializeComponent();
         }
@@ -61,6 +61,16 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

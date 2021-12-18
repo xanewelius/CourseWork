@@ -36,7 +36,9 @@
     <ApplicationIcon>foldercustomgithub_93186.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -60,55 +62,73 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>aPODataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="insertfirsttable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="insertfirsttable.Designer.cs">
+      <DependentUpon>insertfirsttable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="insertsecondtable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="insertsecondtable.Designer.cs">
+      <DependentUpon>insertsecondtable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="insertthirdtable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="insertthirdtable.Designer.cs">
+      <DependentUpon>insertthirdtable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="updatefirsttable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="updatefirsttable.Designer.cs">
+      <DependentUpon>updatefirsttable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatesecondtable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatesecondtable.Designer.cs">
+      <DependentUpon>updatesecondtable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatethirdtable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatethirdtable.Designer.cs">
+      <DependentUpon>updatethirdtable.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="insertfirsttable.resx">
+      <DependentUpon>insertfirsttable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="insertsecondtable.resx">
+      <DependentUpon>insertsecondtable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="insertthirdtable.resx">
+      <DependentUpon>insertthirdtable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="updatefirsttable.resx">
+      <DependentUpon>updatefirsttable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatesecondtable.resx">
+      <DependentUpon>updatesecondtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatethirdtable.resx">
+      <DependentUpon>updatethirdtable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

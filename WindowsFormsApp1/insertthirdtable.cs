@@ -11,13 +11,13 @@ using System.Data.OleDb;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form4 : Form
+    public partial class insertthirdtable : Form
     {
         public static string connect = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=aPO.mdb";
         private OleDbConnection myconnect;
-        Form1 frm1 = new Form1();
+        main frm1 = new main();
 
-        public Form4()
+        public insertthirdtable()
         {
             InitializeComponent();
         }
