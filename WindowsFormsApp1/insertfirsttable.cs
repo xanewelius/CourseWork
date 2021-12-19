@@ -60,6 +60,7 @@ namespace WindowsFormsApp1
             {
                 command.CommandText = "INSERT INTO Заказы (НазваниеЗаказа, ДатаЗаказа, КодКлиента, КодСотрудника, ДатаПримерки, ДатаВыдачи, Стоимость) VALUES ('" + textBox1.Text +"','" + maskedTextBox1.Text +"','"+ textBox3.Text +"','"+ textBox4.Text +"','"+ maskedTextBox2.Text + "','"+ maskedTextBox3.Text + "','"+ textBox7.Text +"')";
                 command.ExecuteNonQuery();
+                MessageBox.Show("Данные добавлены!");
                 myconnect.Close();
                 
             }

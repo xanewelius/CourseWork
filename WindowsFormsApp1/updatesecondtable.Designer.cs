@@ -142,7 +142,7 @@ namespace WindowsFormsApp1
             this.MinimumSize = new System.Drawing.Size(570, 107);
             this.Name = "updatesecondtable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Обновление в Клиенты";
+            this.Text = "Обновление в таблице Клиенты";
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

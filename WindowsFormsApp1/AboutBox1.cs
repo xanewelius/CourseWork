@@ -15,11 +15,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             this.Text = String.Format("О программе");
-            this.labelProductName.Text = AssemblyProduct;
+            this.labelProductName.Text = ("Название продукта: Ателье пошива одежды"); ;
             this.labelVersion.Text = String.Format("Версия {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
+            this.labelCopyright.Text = "Авторские права: Кузьмин М.А.";
             this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
+            this.textBoxDescription.Text = "Программа для работы с базой данных Ателье пошива одежды создана для быстрого и легкого использования сотрудниками Ателье. В ней каждый сотрудник может посмотреть информацию, такую как: Название одежды, Клиента, Обслуживавшего клиента сотрудника, а так же Добавление, Редактирование и Удаление данных.";
         }
 
         #region Методы доступа к атрибутам сборки
@@ -103,6 +103,11 @@ namespace WindowsFormsApp1
         #endregion
 
         private void AboutBox1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelCopyright_Click(object sender, EventArgs e)
         {
 
         }

@@ -188,7 +188,7 @@ namespace WindowsFormsApp1
             this.MinimumSize = new System.Drawing.Size(785, 162);
             this.Name = "insertthirdtable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Добавление в Сотрудники";
+            this.Text = "Добавление в таблицу Сотрудники";
             this.ResumeLayout(false);
             this.PerformLayout();
 

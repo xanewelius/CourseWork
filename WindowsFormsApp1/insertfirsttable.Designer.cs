@@ -52,7 +52,7 @@ namespace WindowsFormsApp1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(25, 41);
+            this.textBox1.Location = new System.Drawing.Point(25, 42);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(97, 20);
             this.textBox1.TabIndex = 0;
@@ -60,21 +60,21 @@ namespace WindowsFormsApp1
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(234, 41);
+            this.textBox3.Location = new System.Drawing.Point(234, 42);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(97, 20);
             this.textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(337, 41);
+            this.textBox4.Location = new System.Drawing.Point(337, 42);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(97, 20);
             this.textBox4.TabIndex = 3;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(689, 41);
+            this.textBox7.Location = new System.Drawing.Point(652, 42);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(97, 20);
             this.textBox7.TabIndex = 6;
@@ -127,7 +127,7 @@ namespace WindowsFormsApp1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(556, 24);
+            this.label6.Location = new System.Drawing.Point(543, 25);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 12;
@@ -136,7 +136,7 @@ namespace WindowsFormsApp1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(686, 25);
+            this.label7.Location = new System.Drawing.Point(649, 24);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 13;
@@ -144,7 +144,7 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(792, 41);
+            this.button1.Location = new System.Drawing.Point(755, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 23);
             this.button1.TabIndex = 14;
@@ -154,7 +154,7 @@ namespace WindowsFormsApp1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(836, 88);
+            this.button2.Location = new System.Drawing.Point(799, 88);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(62, 23);
             this.button2.TabIndex = 15;
@@ -169,7 +169,7 @@ namespace WindowsFormsApp1
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(128, 41);
+            this.maskedTextBox1.Location = new System.Drawing.Point(128, 42);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
@@ -178,7 +178,7 @@ namespace WindowsFormsApp1
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(437, 40);
+            this.maskedTextBox2.Location = new System.Drawing.Point(440, 42);
             this.maskedTextBox2.Mask = "00/00/0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
@@ -187,18 +187,18 @@ namespace WindowsFormsApp1
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(559, 41);
+            this.maskedTextBox3.Location = new System.Drawing.Point(546, 42);
             this.maskedTextBox3.Mask = "00/00/0000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox3.TabIndex = 21;
             this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
             // 
-            // Form2
+            // insertfirsttable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 123);
+            this.ClientSize = new System.Drawing.Size(884, 129);
             this.Controls.Add(this.maskedTextBox3);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
@@ -216,11 +216,11 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(926, 162);
-            this.MinimumSize = new System.Drawing.Size(926, 162);
-            this.Name = "Form2";
+            this.MaximumSize = new System.Drawing.Size(900, 168);
+            this.MinimumSize = new System.Drawing.Size(900, 168);
+            this.Name = "insertfirsttable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Добавление в Заказы";
+            this.Text = "Добавление в таблицу Заказы";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.aPODataSet1)).EndInit();
             this.ResumeLayout(false);

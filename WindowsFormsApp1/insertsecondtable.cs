@@ -54,6 +54,7 @@ namespace WindowsFormsApp1
             {
                 command.CommandText = "INSERT INTO Клиенты (Фамилия, Имя, Отчество, Телефон) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + int.Parse(textBox4.Text) + "')";
                 command.ExecuteNonQuery();
+                MessageBox.Show("Данные добавлены!");
                 myconnect.Close();
 
             }

@@ -177,7 +177,7 @@ namespace WindowsFormsApp1
             this.MinimumSize = new System.Drawing.Size(785, 136);
             this.Name = "updatethirdtable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Обновление в Сотрудники";
+            this.Text = "Обновление в таблице Сотрудники";
             this.ResumeLayout(false);
             this.PerformLayout();
 
