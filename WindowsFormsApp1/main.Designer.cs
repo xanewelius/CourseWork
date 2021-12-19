@@ -157,7 +157,7 @@ namespace WindowsFormsApp1
             this.dataGridView1.DataSource = this.клиентыЗаказыBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 32);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(843, 229);
+            this.dataGridView1.Size = new System.Drawing.Size(843, 174);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -405,9 +405,9 @@ namespace WindowsFormsApp1
             this.телефонDataGridViewTextBoxColumn});
             this.dataGridView2.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView2.DataSource = this.клиентыBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 267);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 217);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(545, 191);
+            this.dataGridView2.Size = new System.Drawing.Size(543, 292);
             this.dataGridView2.TabIndex = 2;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -459,7 +459,7 @@ namespace WindowsFormsApp1
             this.датаРожденияDataGridViewTextBoxColumn});
             this.dataGridView3.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView3.DataSource = this.сотрудникиBindingSource1;
-            this.dataGridView3.Location = new System.Drawing.Point(10, 463);
+            this.dataGridView3.Location = new System.Drawing.Point(564, 307);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(744, 202);
             this.dataGridView3.TabIndex = 3;
@@ -640,16 +640,16 @@ namespace WindowsFormsApp1
             // 
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.comboBox3);
-            this.groupBox3.Location = new System.Drawing.Point(883, 307);
+            this.groupBox3.Location = new System.Drawing.Point(560, 225);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(295, 56);
+            this.groupBox3.Size = new System.Drawing.Size(295, 76);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Добавление";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(201, 20);
+            this.button1.Location = new System.Drawing.Point(202, 26);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -660,7 +660,7 @@ namespace WindowsFormsApp1
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(7, 20);
+            this.comboBox3.Location = new System.Drawing.Point(6, 28);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(158, 21);
             this.comboBox3.TabIndex = 0;
@@ -760,7 +760,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1320, 678);
+            this.ClientSize = new System.Drawing.Size(1320, 524);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -772,8 +772,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1336, 717);
-            this.MinimumSize = new System.Drawing.Size(1336, 717);
+            this.MaximumSize = new System.Drawing.Size(1336, 563);
+            this.MinimumSize = new System.Drawing.Size(1336, 563);
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ателье пошива одежды";

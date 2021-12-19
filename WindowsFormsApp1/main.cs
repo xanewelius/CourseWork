@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
             comboBox3.Items.Add("Заказы"); comboBox3.Items.Add("Клиенты"); comboBox3.Items.Add("Сотрудники"); comboBox3.SelectedIndex = 0;
             comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox4.Items.Add("Заказы"); comboBox4.Items.Add("Клиенты"); comboBox4.Items.Add("Сотрудники"); comboBox4.SelectedIndex = 0;
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox5.Items.Add("Заказы"); comboBox5.Items.Add("Клиенты"); comboBox5.Items.Add("Сотрудники"); comboBox5.SelectedIndex = 0;
             myconnect.Close();
         }
