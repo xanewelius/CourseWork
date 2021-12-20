@@ -323,135 +323,157 @@ namespace WindowsFormsApp1
         {
             if (comboBox5.SelectedIndex == 1)
             {
-                int index, n;
-                string SqlText = "UPDATE [Клиенты] SET ";
-                string kod, fa, i, o, t;
-
-                n = dataGridView2.Rows.Count;
-                if (n == 1) return;
-                updatesecondtable f2 = new updatesecondtable();
-
-                // заполнить форму данными перед открытием
-
-                index = dataGridView2.CurrentRow.Index;
-                kod = dataGridView2[0, index].Value.ToString();
-                fa = dataGridView2[1, index].Value.ToString();
-                i = dataGridView2[2, index].Value.ToString();
-                o = dataGridView2[3, index].Value.ToString();
-                t = dataGridView2[4, index].Value.ToString();
-
-                // f.textBox1.Text = kod;
-                // f.textBox1.Enabled = false;
-                f2.textBox2.Text = fa;
-                f2.textBox3.Text = i;
-                f2.textBox4.Text = o;
-                f2.textBox5.Text = t;
-
-                if (f2.ShowDialog() == DialogResult.OK)
+                try
                 {
+                    int index, n;
+                    string SqlText = "UPDATE [Клиенты] SET ";
+                    string kod, fa, i, o, t;
 
-                    fa = f2.textBox2.Text;
-                    i = f2.textBox3.Text;
-                    o = f2.textBox4.Text;
-                    t = f2.textBox5.Text;
-                    SqlText += "[Фамилия] = '" + fa + "\', [Имя] = '" + i + "\', [Отчество] = '" + o + "\', [Телефон] = \'" + int.Parse(t) + "\' ";
-                    SqlText += "WHERE [Клиенты].КодКлиента = " + int.Parse(kod);
-                    MyExecuteNonQuery(SqlText);
-                    MessageBox.Show("Данные обновлены!");
-                    FillSourse();
+                    n = dataGridView2.Rows.Count;
+                    if (n == 1) return;
+                    updatesecondtable f2 = new updatesecondtable();
+
+                    // заполнить форму данными перед открытием
+
+                    index = dataGridView2.CurrentRow.Index;
+                    kod = dataGridView2[0, index].Value.ToString();
+                    fa = dataGridView2[1, index].Value.ToString();
+                    i = dataGridView2[2, index].Value.ToString();
+                    o = dataGridView2[3, index].Value.ToString();
+                    t = dataGridView2[4, index].Value.ToString();
+
+                    // f.textBox1.Text = kod;
+                    // f.textBox1.Enabled = false;
+                    f2.textBox2.Text = fa;
+                    f2.textBox3.Text = i;
+                    f2.textBox4.Text = o;
+                    f2.textBox5.Text = t;
+
+                    if (f2.ShowDialog() == DialogResult.OK)
+                    {
+
+                        fa = f2.textBox2.Text;
+                        i = f2.textBox3.Text;
+                        o = f2.textBox4.Text;
+                        t = f2.textBox5.Text;
+                        SqlText += "[Фамилия] = '" + fa + "\', [Имя] = '" + i + "\', [Отчество] = '" + o + "\', [Телефон] = \'" + int.Parse(t) + "\' ";
+                        SqlText += "WHERE [Клиенты].КодКлиента = " + int.Parse(kod);
+                        MyExecuteNonQuery(SqlText);
+                        MessageBox.Show("Данные обновлены!");
+                        FillSourse();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Неправильно введены данные", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if (comboBox5.SelectedIndex == 0)
             {
-                int index, n;
-                string SqlText = "UPDATE [Заказы] SET ";
-                string kod, name, orderdate, clientcode, employeecode, fittingdate, dateofissue, price;
-
-                n = dataGridView2.Rows.Count;
-                if (n == 1) return;
-                updatefirsttable f1 = new updatefirsttable();
-
-                // заполнить форму данными перед открытием
-
-                index = dataGridView1.CurrentRow.Index;
-                kod = dataGridView1[0, index].Value.ToString();
-                name = dataGridView1[1, index].Value.ToString();
-                orderdate = dataGridView1[2, index].Value.ToString();
-                clientcode = dataGridView1[3, index].Value.ToString();
-                employeecode = dataGridView1[4, index].Value.ToString();
-                fittingdate = dataGridView1[5, index].Value.ToString();
-                dateofissue = dataGridView1[6, index].Value.ToString();
-                price = dataGridView1[7, index].Value.ToString();
-
-                f1.textBox1.Text = name;
-                f1.textBox7.Text = price;
-                f1.maskedTextBox1.Text = orderdate;
-                f1.maskedTextBox2.Text = fittingdate;
-                f1.maskedTextBox3.Text = dateofissue;
-
-                if (f1.ShowDialog() == DialogResult.OK)
+                try
                 {
-                    
-                    name = f1.textBox1.Text;
-                    price = f1.textBox7.Text;
-                    orderdate = f1.maskedTextBox1.Text;
-                    fittingdate = f1.maskedTextBox2.Text;
-                    dateofissue = f1.maskedTextBox3.Text;
+                    int index, n;
+                    string SqlText = "UPDATE [Заказы] SET ";
+                    string kod, name, orderdate, clientcode, employeecode, fittingdate, dateofissue, price;
 
-                    SqlText += "[НазваниеЗаказа] = '" + name + "\', [Стоимость] = '" + int.Parse(price) + "\', [ДатаЗаказа] = '" + orderdate + "\', [ДатаПримерки] = '" + fittingdate + "\', [ДатаВыдачи] = '" + dateofissue + "\' ";
-                    SqlText += "WHERE [Заказы].КодЗаказа = " + int.Parse(kod);
+                    n = dataGridView2.Rows.Count;
+                    if (n == 1) return;
+                    updatefirsttable f1 = new updatefirsttable();
 
-                    MyExecuteNonQuery(SqlText);
-                    MessageBox.Show("Данные обновлены!");
-                    FillSourse();
-                    
+                    // заполнить форму данными перед открытием
+
+                    index = dataGridView1.CurrentRow.Index;
+                    kod = dataGridView1[0, index].Value.ToString();
+                    name = dataGridView1[1, index].Value.ToString();
+                    orderdate = dataGridView1[2, index].Value.ToString();
+                    clientcode = dataGridView1[3, index].Value.ToString();
+                    employeecode = dataGridView1[4, index].Value.ToString();
+                    fittingdate = dataGridView1[5, index].Value.ToString();
+                    dateofissue = dataGridView1[6, index].Value.ToString();
+                    price = dataGridView1[7, index].Value.ToString();
+
+                    f1.textBox1.Text = name;
+                    f1.textBox7.Text = price;
+                    f1.maskedTextBox1.Text = orderdate;
+                    f1.maskedTextBox2.Text = fittingdate;
+                    f1.maskedTextBox3.Text = dateofissue;
+
+                    if (f1.ShowDialog() == DialogResult.OK)
+                    {
+
+                        name = f1.textBox1.Text;
+                        price = f1.textBox7.Text;
+                        orderdate = f1.maskedTextBox1.Text;
+                        fittingdate = f1.maskedTextBox2.Text;
+                        dateofissue = f1.maskedTextBox3.Text;
+
+                        SqlText += "[НазваниеЗаказа] = '" + name + "\', [Стоимость] = '" + int.Parse(price) + "\', [ДатаЗаказа] = '" + orderdate + "\', [ДатаПримерки] = '" + fittingdate + "\', [ДатаВыдачи] = '" + dateofissue + "\' ";
+                        SqlText += "WHERE [Заказы].КодЗаказа = " + int.Parse(kod);
+
+                        MyExecuteNonQuery(SqlText);
+                        MessageBox.Show("Данные обновлены!");
+                        FillSourse();
+
+                    }
+                }
+                catch(Exception)
+                {
+                    MessageBox.Show("Неправильно введены данные", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if (comboBox5.SelectedIndex == 2)
             {
-                int index, n;
-                string SqlText = "UPDATE [Сотрудники] SET ";
-                string kod, fa, i, o, s, t, d;
-
-                n = dataGridView3.Rows.Count;
-                if (n == 1) return;
-                updatethirdtable f3 = new updatethirdtable();
-
-                // заполнить форму данными перед открытием
-
-                index = dataGridView3.CurrentRow.Index;
-                kod = dataGridView3[0, index].Value.ToString();
-                fa = dataGridView3[1, index].Value.ToString();
-                i = dataGridView3[2, index].Value.ToString();
-                o = dataGridView3[3, index].Value.ToString();
-                s = dataGridView3[4, index].Value.ToString();
-                t = dataGridView3[5, index].Value.ToString();
-                d = dataGridView3[6, index].Value.ToString();
-
-                // f.textBox1.Text = kod;
-                // f.textBox1.Enabled = false;
-                f3.textBox1.Text = fa;
-                f3.textBox2.Text = i;
-                f3.textBox3.Text = o;
-                f3.textBox4.Text = s;
-                f3.textBox5.Text = t;
-                f3.maskedTextBox3.Text = d;
-
-                if (f3.ShowDialog() == DialogResult.OK)
+                try
                 {
 
-                    fa = f3.textBox1.Text;
-                    i = f3.textBox2.Text;
-                    o = f3.textBox3.Text;
-                    s = f3.textBox4.Text;
-                    t = f3.textBox5.Text;
-                    d = f3.maskedTextBox3.Text;
+                    int index, n;
+                    string SqlText = "UPDATE [Сотрудники] SET ";
+                    string kod, fa, i, o, s, t, d;
 
-                    SqlText += "[Фамилия] = '" + fa + "\', [Имя] = '" + i + "\', [Отчество] = '" + o + "\', [Специализация] = '" + s + "\', [Телефон] = '" + int.Parse(t) + "\', [ДатаРождения] = '" + d + "\' ";
-                    SqlText += "WHERE [Сотрудники].КодСотрудника = " + int.Parse(kod);
-                    MyExecuteNonQuery(SqlText);
-                    MessageBox.Show("Данные обновлены!");
-                    FillSourse();
+                    n = dataGridView3.Rows.Count;
+                    if (n == 1) return;
+                    updatethirdtable f3 = new updatethirdtable();
+
+                    // заполнить форму данными перед открытием
+
+                    index = dataGridView3.CurrentRow.Index;
+                    kod = dataGridView3[0, index].Value.ToString();
+                    fa = dataGridView3[1, index].Value.ToString();
+                    i = dataGridView3[2, index].Value.ToString();
+                    o = dataGridView3[3, index].Value.ToString();
+                    s = dataGridView3[4, index].Value.ToString();
+                    t = dataGridView3[5, index].Value.ToString();
+                    d = dataGridView3[6, index].Value.ToString();
+
+                    // f.textBox1.Text = kod;
+                    // f.textBox1.Enabled = false;
+                    f3.textBox1.Text = fa;
+                    f3.textBox2.Text = i;
+                    f3.textBox3.Text = o;
+                    f3.textBox4.Text = s;
+                    f3.textBox5.Text = t;
+                    f3.maskedTextBox3.Text = d;
+
+                    if (f3.ShowDialog() == DialogResult.OK)
+                    {
+
+                        fa = f3.textBox1.Text;
+                        i = f3.textBox2.Text;
+                        o = f3.textBox3.Text;
+                        s = f3.textBox4.Text;
+                        t = f3.textBox5.Text;
+                        d = f3.maskedTextBox3.Text;
+
+                        SqlText += "[Фамилия] = '" + fa + "\', [Имя] = '" + i + "\', [Отчество] = '" + o + "\', [Специализация] = '" + s + "\', [Телефон] = '" + int.Parse(t) + "\', [ДатаРождения] = '" + d + "\' ";
+                        SqlText += "WHERE [Сотрудники].КодСотрудника = " + int.Parse(kod);
+                        MyExecuteNonQuery(SqlText);
+                        MessageBox.Show("Данные обновлены!");
+                        FillSourse();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Неправильно введены данные", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

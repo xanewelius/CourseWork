@@ -64,9 +64,9 @@ namespace WindowsFormsApp1
                 myconnect.Close();
                 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Неправильно введены данные", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
